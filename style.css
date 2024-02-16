@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: #dadada;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #131921;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.loc-country {
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #c4c4c4;
+    text-transform: capitalize;
+}
+
+.loc-country h1 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.nav-search {
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+    margin-left: 15px;
+    align-items: center;
+    background-color: #fff;
+    color: gray;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.search-gategory {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    background-color: #e5e5e5;
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.search-icon {
+    max-width: 41px;
+    padding: 8px;
+    background-color: #ffd64f;
+    border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-text {
+    margin-left: 15px;
+}
+
+.nav-text p {
+    font-size: 10px;
+}
+
+.nav-text h1 {
+    font-size: 14px;
+}
+
+.nav-cart {
+    display: flex;
+    margin: 0 15px;
+    gap: 2px;
+    align-items: center;
+}
