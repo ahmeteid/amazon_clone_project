@@ -2,7 +2,7 @@ const imgs = document.querySelectorAll(".header-slider ul img");
 const prevBtn = document.querySelector(".control-prev");
 const nextBtn = document.querySelector(".control-next");
 
-let n = 0;
+let n = 0; // n = currentIndexImage (index of image)
 
 function changeSlide() {
     for(let i = 0; i < imgs.length; i++) {
@@ -10,7 +10,7 @@ function changeSlide() {
     }
     imgs[n].style.display = "block";
 }
-changeSlide();
+// changeSlide();
 
 nextBtn.addEventListener("click", (e) => {
     if(n < imgs.length - 1) {
