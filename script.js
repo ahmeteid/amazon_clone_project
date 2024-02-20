@@ -1,6 +1,8 @@
 const imgs = document.querySelectorAll(".header-slider ul img");
 const prevBtn = document.querySelector(".control-prev");
 const nextBtn = document.querySelector(".control-next");
+const scrollContainer = document.querySelectorAll(".products-slider .products");
+const scrollDeals = document.querySelectorAll(".product-slider-with-price .products");
 
 let n = 0; // n = currentIndexImage (index of image)
 
@@ -29,3 +31,19 @@ prevBtn.addEventListener("click", (e) => {
     }
     changeSlide();
 })
+
+// Scroll For Products Section
+for(const item of scrollContainer) {
+    item.addEventListener("wheel", (evt)=> {
+        evt.preventDefault();
+        item.scrollLeft += evt.deltaY;
+    })
+}
+
+// Scroll For Deals section
+for(const item of scrollDeals) {
+    item.addEventListener("wheel", (evt)=> {
+        evt.preventDefault();
+        item.scrollLeft += evt.deltaY;
+    })
+}
