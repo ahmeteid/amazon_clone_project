@@ -281,3 +281,17 @@ nav {
     font-size: 16px;
     color: #000000;
 }
+
+/* Start Footer */
+footer {
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+}
+
+footer {
+    cursor: pointer;
+}
